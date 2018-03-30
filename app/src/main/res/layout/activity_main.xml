@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chan.revernue.testsystemapplication.MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvChan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello"
+        android:visibility="gone" />
+
+
+    <EditText
+        android:id="@+id/edtNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnCoppy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COPPY"
+        android:visibility="gone" />
+
+    <!--  _____________________ start home ___________________    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtText1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="0"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edtText2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="0"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/tvSum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="= 0" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:background="@drawable/selector_btn_default"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculate" />
+
+    <CheckBox
+        android:id="@+id/checkval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="@string/i_agress" />
+
+    <RadioGroup
+        android:id="@+id/rgOperator"
+        android:checkedButton="@+id/rbPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbPlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/redio_marginleft"
+            android:text="@string/plus" />
+
+        <RadioButton
+            android:id="@+id/rbMinus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/redio_marginleft"
+            android:text="@string/minus" />
+
+        <RadioButton
+            android:id="@+id/rbMultiply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/redio_marginleft"
+            android:text="@string/multiply" />
+
+        <RadioButton
+            android:id="@+id/rbDivide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/redio_marginleft"
+            android:text="@string/divide" />
+
+    </RadioGroup>
+
+    <ProgressBar
+        style="@style/ProgressBarStyle"
+        android:indeterminate="true"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_btn"
+            android:text="@string/test_button"/>
+        <com.inthecheesefactory.thecheeselibrary.widget.AdjustableImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_default_normal"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+
+            android:src="@drawable/ic_back" />
+        <!--android:scaleType="fitCenter"-->
+
+        <com.inthecheesefactory.thecheeselibrary.widget.AdjustableImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="#00000000"
+            android:scaleType="fitXY"
+
+            android:src="@drawable/ic_back" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
